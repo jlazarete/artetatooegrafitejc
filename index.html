@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carregando...</title>
+  
+  <!-- SEO Local e Meta Tags Genéricas (Gerido dinamicamente pelo app.js) -->
+  <meta name="description" content="Carregando descrição do negócio...">
+  
+  <!-- Fontes Premium do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome para Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Header (Menu de Navegação) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" data-config="businessName">Arte Tattoo & Grafite JC</a>
+      
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Localização</a>
+      </nav>
+      
+      <a href="#" class="btn btn-primary btn-nav-whatsapp" data-config="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Contato Rápido
+      </a>
+      
+      <!-- Menu Mobile Toggle (Para responsividade futura) -->
+      <button class="mobile-menu-toggle" aria-label="Abrir Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section (Destaque Principal) -->
+  <section id="inicio" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge" data-config="category">Grafite e Muralismo Artístico</span>
+        <h1 data-config="tagline">Grafite profissional e muralismo artístico de alto impacto.</h1>
+        <p data-config="description">Carregando apresentação...</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg" data-config="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Falar com o JC (WhatsApp)
+          </a>
+          <a href="#portfolio" class="btn btn-secondary btn-lg">Ver Portfólio</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glowing-box">
+          <!-- O JS preencherá as imagens demonstrativas no grid de portfólio. Aqui geramos um grafismo de apoio visual -->
+          <div class="visual-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Serviços Section -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que fazemos</h2>
+        <p>Arte profissional aplicada a diferentes suportes, com segurança, higiene e criatividade.</p>
+      </div>
+      <div id="services-grid" class="services-grid">
+        <!-- Renderizado dinamicamente pelo app.js -->
+        <div class="loading-placeholder">Carregando serviços...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Portfólio Section (Galeria Dinâmica) -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Portfólio Vitrine</h2>
+        <p>Confira alguns de nossos trabalhos em destaque. Filtre por tipo de arte.</p>
+      </div>
+      
+      <!-- Filtros da Galeria -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="comercial">Comercial</button>
+        <button class="filter-btn" data-filter="residencial">Residencial</button>
+      </div>
+      
+      <div id="portfolio-grid" class="portfolio-grid">
+        <!-- Renderizado dinamicamente pelo app.js -->
+        <div class="loading-placeholder">Carregando galeria de artes...</div>
+      </div>
+      
+      <div class="portfolio-cta">
+        <p>Gostou do estilo? Vamos desenhar o seu projeto!</p>
+        <a href="#" class="btn btn-primary" data-config="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> Solicitar Orçamento Personalizado
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Depoimentos Section -->
+  <section id="depoimentos" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quem já fez aprova</h2>
+        <p>Confira o feedback de quem confiou sua pele ou seu espaço à nossa arte.</p>
+      </div>
+      <div id="testimonials-grid" class="testimonials-grid">
+        <!-- Renderizado dinamicamente pelo app.js -->
+        <div class="loading-placeholder">Carregando avaliações...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contato e Localização (Google Maps Integration) -->
+  <section id="contato" class="contact">
+    <div class="container contact-container">
+      <div class="contact-info-panel">
+        <h2>Nosso Estúdio</h2>
+        <p>Venha nos fazer uma visita ou tire suas dúvidas online.</p>
+        
+        <div class="contact-details">
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4 data-config="address-street">Carregando endereço...</h4>
+              <p data-config="address-neighborhood-city">Carregando localização...</p>
+            </div>
+          </div>
+          
+          <div class="detail-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horário de Atendimento</h4>
+              <p data-config="hours-display">Carregando horários...</p>
+            </div>
+          </div>
+          
+          <div class="detail-item">
+            <i class="fab fa-instagram"></i>
+            <div>
+              <h4>Instagram Oficial</h4>
+              <a href="#" target="_blank" data-config="instagram-link">Carregando...</a>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>E-mail</h4>
+              <p data-config="contact-email">Carregando...</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <a href="#" class="btn btn-primary" data-config="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-map">
+        <!-- Google Maps Embed iFrame -->
+        <iframe 
+          data-config="maps-iframe"
+          src="" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <h3 data-config="businessName">Arte Tattoo & Grafite JC</h3>
+        <p data-config="tagline">Arte na pele e nas paredes.</p>
+      </div>
+      
+      <div class="footer-center">
+        <p>&copy; 2026. Todos os direitos reservados.</p>
+        <p>Desenvolvido para indexação otimizada no Google Maps.</p>
+      </div>
+      
+      <div class="footer-right">
+        <div class="social-icons">
+          <a href="#" target="_blank" data-config="instagram-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" data-config="whatsapp-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carregamento de scripts na ordem correta (1. Dados, 2. Motor) -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Lógica simples para menu mobile toggle
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('active');
+    });
+    // Fechar menu ao clicar em algum link
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

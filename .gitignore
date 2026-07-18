@@ -1,0 +1,21 @@
+# Arquivos temporários e logs da IA
+.tmp/
+.gemini/
+*transcript*.jsonl
+task.md
+implementation_plan.md
+walkthrough.md
+
+# Sistema Operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
