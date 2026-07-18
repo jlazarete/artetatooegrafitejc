@@ -60,10 +60,9 @@ Como o site é 100% estático (HTML, CSS e JS puros), ele pode ser hospedado de 
 - [ ] Inserir fotos reais do cliente na pasta `assets/` e linkar no `config.js`.
 - [ ] Atualizar o `config.js` com o WhatsApp, Endereço e Nome oficiais do cliente assim que ele os enviar.
 - [ ] Substituir o link do iFrame do Google Maps no `config.js` com a localização exata do estúdio.
-- [ ] Fazer o deploy no GitHub Pages e enviar o link de homologação para o cliente.
 
 ### Em Andamento
-- *Nenhum no momento.*
+- [ ] Enviar o link de homologação para o cliente e aguardar aprovação.
 
 ### Concluído
 - [x] Definição do fluxo de trabalho global ICAE + DOE.
@@ -73,3 +72,5 @@ Como o site é 100% estático (HTML, CSS e JS puros), ele pode ser hospedado de 
 - [x] Desenvolvimento da lógica de injeção e SEO dinâmico no `app.js`.
 - [x] Criação do esqueleto HTML semântico e SEO-friendly `index.html`.
 - [x] Criação do design premium responsivo com tema Neon-Dark em `styles.css`.
+- [x] Fazer o deploy de homologação (branch `dev`) no GitHub Pages: [Site Vitrine JC](https://jlazarete.github.io/artetatooegrafitejc/)
+
